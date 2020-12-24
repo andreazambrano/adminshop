@@ -11032,7 +11032,7 @@ a:hover, a:focus {
   background-size: cover;
   height: 600px;
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
 }
