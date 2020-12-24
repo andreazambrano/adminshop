@@ -1,8 +1,64 @@
-<app-fruitproducts></app-fruitproducts>
-<app-fruitcesta></app-fruitcesta>
-<app-fruitbannerbox></app-fruitbannerbox>
-<app-fruitbanner></app-fruitbanner>
-<a href="index.html#" class="scrollup" style="display: none;"><i class="ion-ios-arrow-up"></i></a> 
-<a tw-mt-30 href="https://wa.me/584147529202?text=Hola,%20deseo%20realizar%20un%20pedido" class="whatsapp" target="_blank" title="ContÃ¡ctanos por whatsapp !" style="color: white;"> 
-         <i class="ion-social-whatsapp" style="color:#25d366;"></i>
-         </a>
+
+				 <div class="main-content">
+	
+				<header class="bg-white style2 pt-2 pb-0 bg-home">
+					<div class="row">
+				
+						<div class="col-sm-12 text-left pos-top">
+		                	<h2 class="titleText text-left mt-4 mb-2">My Shop </h2>
+		                </div>
+		                
+	                </div>
+				</header>
+			
+				
+				<!-- loader wrapper -->
+				<div class="preloader-wrap p-3">
+					<div class="box shimmer">
+						<div class="lines">
+							<div class="line s_shimmer"></div>
+							<div class="line s_shimmer"></div>
+							<div class="line s_shimmer"></div>
+							<div class="line s_shimmer"></div>
+						</div>
+					</div>
+					<div class="box shimmer mb-3">
+						<div class="lines">
+							<div class="line s_shimmer"></div>
+							<div class="line s_shimmer"></div>
+							<div class="line s_shimmer"></div>
+							<div class="line s_shimmer"></div>
+						</div>
+					</div>
+				</div>
+				<!-- loader wrapper -->
+
+				<div class="app-body p-4">
+					<div class="row">
+						<div class="col-sm-12 mb-4">
+							<div class="owl-carousel owl-theme shop-categoris vis-slider" style="width:120%;">
+								<div class="item"><a href="#"><img src="assets/assetsadmin/images/cat-round-1.png" alt="cat"><h4>Women</h4></a></div>
+								<div class="item"><a href="#"><img src="assets/assetsadmin/images/cat-round-2.png" alt="cat"><h4>Men</h4></a></div>
+								<div class="item"><a href="#"><img src="assets/assetsadmin/images/cat-round-3.png" alt="cat"><h4>Accessories</h4></a></div>
+								<div class="item"><a href="#"><img src="assets/assetsadmin/images/cat-round-4.png" alt="cat"><h4>Shoes</h4></a></div>
+								<div class="item"><a href="#"><img src="assets/assetsadmin/images/cat-round-5.png" alt="cat"><h4>Sunglass</h4></a></div>
+								<div class="item"><a href="#"><img src="assets/assetsadmin/images/cat-round-6.png" alt="cat"><h4>Belt</h4></a></div>
+								<div class="item"><a href="#"><img src="assets/assetsadmin/images/cat-round-1.png" alt="cat"><h4>Women</h4></a></div>
+							</div>
+						</div>
+			
+					 	<div class="col-sm-12">
+					 		<ul class="shop-item pl-0">
+								<li *ngFor="let tix of tixs">
+									<a href="#">
+										<img src="{{tix.images[0]}}" alt="banner">
+									</a>
+									<h4>{{tix.productName}} </h4>
+									<span>{{tix.globalPrice}} </span>
+								</li>				 			
+					 		</ul>
+					 	</div>
+					</div>
+				</div>	
+				</div>		
+		

@@ -8,7 +8,8 @@ import {
 	FruitfooterComponent,
 	FruittopbarComponent,
 	FruitcartComponent,
-	PagoComponent
+	PagoComponent,
+	AdminfooterComponent
 
 	}from "./components/index.paginas";
 
@@ -16,6 +17,7 @@ import {
 
 const app_routes: Routes = [
 	{path:'',component:TestappComponent},
+	{path:'adminfooter',component:AdminfooterComponent},
 	{path:'fruittopbar',component:FruittopbarComponent},
 	{path:'fruitproducts',component:FruitproductsComponent},
 	{path:'fruitbanner',component:FruitbannerComponent},
