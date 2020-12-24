@@ -1,3 +1,5 @@
+import { Router } from '@angular/router';
+import { Location } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminfooterComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+public router: Router,
+  public location: Location
+  	) { }
 
   ngOnInit() {
   }

@@ -3,6 +3,9 @@ import { UserWService } from "../../services/user-w.service";
 import { DataApiService } from '../../services/data-api.service';
 import { TixInterface } from '../../models/tix-interface'; 
 
+import { Router } from '@angular/router';
+import { Location } from '@angular/common';
+
 @Component({
   selector: 'app-testapp',
   templateUrl: './testapp.component.html',
@@ -12,7 +15,9 @@ export class TestappComponent implements OnInit {
 
   constructor(
       public _uw:UserWService,
-  private dataApi: DataApiService
+  private dataApi: DataApiService,
+  public router: Router,
+  public location: Location
      ) { }
   public tixs:TixInterface;
    loadAPI = null;  

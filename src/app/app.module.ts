@@ -49,6 +49,9 @@ import { Component, Inject} from '@angular/core';
 import { FruitcartComponent } from './components/fruitcart/fruitcart.component';
 import { PagoComponent } from './components/pago/pago.component';
 import { AdminfooterComponent } from './components/adminfooter/adminfooter.component';
+import { BlogComponent } from './components/blog/blog.component';
+import { OrderComponent } from './components/order/order.component';
+import { AccountComponent } from './components/account/account.component';
 
 @NgModule({
   declarations: [
@@ -63,6 +66,9 @@ import { AdminfooterComponent } from './components/adminfooter/adminfooter.compo
     FruitcartComponent,
     PagoComponent,
     AdminfooterComponent,
+    BlogComponent,
+    OrderComponent,
+    AccountComponent,
   ],
   imports: [
     BrowserModule,

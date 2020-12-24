@@ -8,3 +8,5 @@ export { FruittopbarComponent } from "./fruittopbar/fruittopbar.component";
 export { FruitcartComponent } from "./fruitcart/fruitcart.component";
 export { AdminfooterComponent } from "./adminfooter/adminfooter.component";
 export { PagoComponent } from "./pago/pago.component";
+export { OrderComponent } from "./order/order.component";
+export { BlogComponent } from "./blog/blog.component";

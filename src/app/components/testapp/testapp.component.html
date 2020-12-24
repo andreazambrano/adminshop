@@ -37,7 +37,7 @@
 					<div class="row">
 						<div class="col-sm-12 mb-4">
 							<div class="owl-carousel owl-theme shop-categoris vis-slider" style="width:120%;">
-								<div class="item"><a href="#"><img src="assets/assetsadmin/images/cat-round-1.png" alt="cat"><h4>Women</h4></a></div>
+								<div class="item"><a href="#"><img src="assets/assetsadmin/images/cat-round-1.png" alt="cat" ><h4>Women</h4></a></div>
 								<div class="item"><a href="#"><img src="assets/assetsadmin/images/cat-round-2.png" alt="cat"><h4>Men</h4></a></div>
 								<div class="item"><a href="#"><img src="assets/assetsadmin/images/cat-round-3.png" alt="cat"><h4>Accessories</h4></a></div>
 								<div class="item"><a href="#"><img src="assets/assetsadmin/images/cat-round-4.png" alt="cat"><h4>Shoes</h4></a></div>
@@ -51,10 +51,11 @@
 					 		<ul class="shop-item pl-0">
 								<li *ngFor="let tix of tixs">
 									<a href="#">
-										<img src="{{tix.images[0]}}" alt="banner">
+										<img src="{{tix.images[0]}}" alt="banner" style="border-radius: 15px;">
 									</a>
-									<h4>{{tix.productName}} </h4>
-									<span>{{tix.globalPrice}} </span>
+									<h4 style="font-size: 14px;">{{tix.productName}} </h4>
+
+									<span style="font-size: 15px;">BsS. {{tix.globalPrice  |  number:'1.0-0' }} </span>
 								</li>				 			
 					 		</ul>
 					 	</div>
